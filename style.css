@@ -1,0 +1,244 @@
+/* CSS Reset  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variavles */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.30;
+}
+
+/* Navigation bar : Logo and Image  */
+#logo {
+    margin: 34px 45px;
+}
+
+#logo img {
+    height: 86px;
+    margin: -28px -44px
+}
+
+/* Navigation bar : List Style  */
+#navbar {
+    position: relative;
+    font-family: 'Prosto One', cursive;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    padding: 32px 15px;
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    border-radius: 20px;
+    color: antiquewhite;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: beige;
+
+}
+
+/* Home Section  */
+#home{
+    height: 388px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('pj.png.png')  center center/cover;
+     position: absolute;
+     height: 85%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.60;
+}
+
+#home h1{
+    color: silver;
+    text-align: center;
+    font-family: 'GFS Neohellenic', sans-serif;
+}
+
+#home p{
+    color: rgb(97, 97, 97);
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'GFS Neohellenic', sans-serif;
+
+}
+
+/* Services Center  */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box img{
+    display: block;
+    height: 100px;
+    margin: auto;
+  
+   
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 8px;
+    border-radius: 29px;
+    background-color: #d9d3df;
+}
+
+#services .box p{
+    font-family: 'GFS Neohellenic', sans-serif;
+}
+#services{}
+#services{}
+
+/* Client Section */
+#client-section{
+    height: 260px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('sa.png') center center/cover;
+    height: 37%;
+    width: 100%;
+    /* z-index: -1; */
+    opacity: 0.30;   
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-items{
+    padding: 20px;
+}
+
+#clients img{
+    height:126px;
+}
+
+/* Contact Section  */
+#contact{
+    /* content: ""; */
+    position: relative;
+    /* background: url('contact.png') no-repeat center center/cover;
+    height: 130px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.70;
+     */
+}
+
+#contact::before{
+    position: absolute;
+    content: "";
+    background: url('contact.png') no-repeat center center/cover;
+    height: 523px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.70;
+    
+
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+
+}
+
+#contact-box input,
+#contact-box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 0.9rem;
+}
+
+#contact-box form{
+        width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'GFS Neohellenic', sans-serif;
+
+}
+
+footer{
+    background-color: black;
+    color: aliceblue;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.-hprimary{
+    font-size: 3.8rem;
+    padding-top: 70px;    
+}
+
+.h-primary{
+    font-size: 2.5rem;
+    padding-top: 3px;
+    font-family: cursive;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    margin-top: 70px;
+    font-family: 'GFS Neohellenic', sans-serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(27, 27, 27);
+    color: azure;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
